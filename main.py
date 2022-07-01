@@ -177,7 +177,7 @@ def main():
             shop.remove(request.product, request.amount)
             print(f'Курьер забрал {request.amount} {request.product} из пункта {request.from_}')
             print(f'Курьер везет {request.amount} {request.product} из пункта {request.from_} в пункт {request.to}')
-            shop.add(request.product, request.amount)
+            store.add(request.product, request.amount)
             print(f'Курьер доставил {request.amount} {request.product} в пункт {request.to}')
 
         print('=' * 30)
